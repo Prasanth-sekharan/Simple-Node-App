@@ -36,5 +36,4 @@ pipeline:
                     tags:
                       - v1
         delegateSelectors:
-          - windows-amd64
           - docker-delegate
