@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Prasanth_sekharan_Simple_Node_App_1701247763618-pr-trigger-input-set
+  identifier: Build_Prasanth_sekharan_Simple_Node_App_1701247763618prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Difinative_project
+  pipeline:
+    identifier: Build_Prasanth_sekharan_Simple_Node_App_1701247763618
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
