@@ -27,13 +27,11 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: BuildAndPushDockerRegistry
-                  name: BuildAndPushDockerRegistry_1
-                  identifier: BuildAndPushDockerRegistry_1
+                  type: Plugin
+                  name: Plugin_1
+                  identifier: Plugin_1
                   spec:
                     connectorRef: dockerhub_connector
-                    repo: prasanthsekharan/harness
-                    tags:
-                      - v1
+                    image: prasanthsekharan/harness
         delegateSelectors:
           - windows-amd64
