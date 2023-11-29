@@ -1,0 +1,33 @@
+pipeline:
+  name: Build Simple-Node-App
+  identifier: Build_Prasanth_sekharan_Simple_Node_App_1701247763618
+  projectIdentifier: Difinative_project
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github
+        repoName: Prasanth-sekharan/Simple-Node-App
+        build: <+input>
