@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Prasanth_sekharan_Simple_Node_App_1701247763618-push-trigger-input-set
+  identifier: Build_Prasanth_sekharan_Simple_Node_App_1701247763618pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Difinative_project
+  pipeline:
+    identifier: Build_Prasanth_sekharan_Simple_Node_App_1701247763618
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
